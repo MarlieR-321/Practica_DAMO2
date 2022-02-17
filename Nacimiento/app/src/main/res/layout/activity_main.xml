@@ -12,11 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
+        android:background="#7021ECF3"
+        android:lineSpacingExtra="10dp"
         android:padding="15dp"
         android:text="Haga click para seleccionar su cumpleaños"
         android:textAlignment="center"
-        android:textSize="20dp"
-        android:lineSpacingExtra="10dp"/>
+        android:textSize="24dp"
+        />
 
     <ImageView
         android:id="@+id/ivFoto"

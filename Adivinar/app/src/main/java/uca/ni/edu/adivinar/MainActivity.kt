@@ -40,16 +40,17 @@ class MainActivity : AppCompatActivity() {
 
         binding.run {
             btnAdivinar.setOnClickListener {
-                if(intento in 2..3){
+                if(intento in 1..3){
                     if(etnAdivina.text.toString().toInt() == rndm){
                         tvNota.text = "Numero ${etnAdivina.text.toString().toInt()} adivinado"
                     }else{
-
-                        tvNota.text = "Intentos restantes: $intento"
-                        intento--
+                        if(intento ==1){
+                            tvNota.text = "Sin intentos restantes, ingrese nuevo rango"
+                        }else{
+                            intento--
+                            tvNota.text = "Intentos restantes: $intento"
+                        }
                     }
-                }else{
-                    tvNota.text = "Sin intentos restantes, ingrese nuevo rango"
                 }
             }
         }
