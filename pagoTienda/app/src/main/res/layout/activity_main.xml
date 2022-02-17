@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Producto"
+            android:paddingVertical="15dp"
+            android:paddingStart="9dp"
+            />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Ingrese el precio"
+            android:paddingVertical="15dp"
+            android:paddingStart="9dp"
+            />
+
+        <EditText
+            android:id="@+id/etndPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Ingrese la cantidad del articulo"
+            android:paddingVertical="15dp"
+            android:paddingStart="9dp"
+            android:lineSpacingExtra="10dp"
+            />
+
+        <EditText
+            android:id="@+id/etndCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Ingresar"
+            />
+
+        <Button
+            android:id="@+id/btnIVA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Aplicar IVA" />
+
+        <Button
+            android:id="@+id/btnNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Nuevo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Producto"
+            android:paddingVertical="15dp"
+            android:paddingStart="9dp"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Precio"
+            android:paddingVertical="15dp"
+            android:paddingStart="9dp"
+            /><TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Cantidad"
+        android:paddingVertical="15dp"
+        android:paddingStart="9dp"
+        />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCompra"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:padding="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tvSubtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtotal: 0"
+        android:paddingVertical="15dp"
+        android:paddingStart="9dp"/>
+    <TextView
+        android:id="@+id/tvIVA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IVA: 0.0"
+        android:paddingVertical="15dp"
+        android:paddingStart="9dp"/>
+    <TextView
+        android:id="@+id/tvNeto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pago Neto: 0.0"
+        android:paddingVertical="15dp"
+        android:paddingStart="9dp"/>
+
+
+</LinearLayout>
